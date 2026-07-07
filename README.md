@@ -216,9 +216,6 @@ Retrieve a secret message with the correct password.
 
 ---
 
-## 📄 License
-
-MIT License — free to use and modify.
 
 ---
 
