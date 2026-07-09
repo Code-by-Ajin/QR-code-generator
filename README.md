@@ -27,8 +27,6 @@
 
 👉 **[https://qr-steganography.onrender.com](https://qr-steganography.onrender.com)**
 
-> ⚠️ Free tier may take ~30 seconds to wake up on first visit.
-
 ---
 
 ## 🛠️ Tech Stack
