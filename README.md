@@ -25,8 +25,9 @@
 
 ## 🚀 Live Demo
 
-👉 **[https://qr-steganography.onrender.com](https://qr-steganography.onrender.com)**
+👉 **[https://qr-code-generator-3cso.onrender.com](https://qr-code-generator-3cso.onrender.com)**
 
+   this is used in free version in render so it take the few seconds to open. please wait.....
 ---
 
 ## 🛠️ Tech Stack
