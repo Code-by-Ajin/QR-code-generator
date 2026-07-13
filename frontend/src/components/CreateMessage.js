@@ -37,11 +37,6 @@ const CreateMessage = () => {
       setError('Please provide a message or an image to hide.');
       return;
     }
-    if (!password) {
-      setError('A password is required.');
-      return;
-    }
-
     setLoading(true);
 
     const formData = new FormData();
@@ -170,7 +165,7 @@ const CreateMessage = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password (Optional)</label>
             <div style={{ position: 'relative' }}>
               <Lock size={20} style={{ position: 'absolute', top: 12, left: 12, color: '#94a3b8' }} />
               <input
@@ -178,10 +173,9 @@ const CreateMessage = () => {
                 type="password"
                 className="form-control"
                 style={{ paddingLeft: '2.5rem' }}
-                placeholder="Set a password to lock the message"
+                placeholder="Set a password to lock the message (optional)"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                required
               />
             </div>
           </div>
@@ -195,7 +189,7 @@ const CreateMessage = () => {
         <div className="qr-container">
           <h3>Your Secret QR Code is Ready!</h3>
           <p style={{ color: '#94a3b8', textAlign: 'center' }}>
-            Scan this QR code or share it. They will need your password to view the message.
+            Scan this QR code or share it. {password ? 'They will need your password to view the message.' : 'Anyone who scans it can view the message.'}
           </p>
           <div className="qr-code-wrapper" ref={qrRef} style={{ padding: '1rem', background: 'white', borderRadius: '8px', display: 'inline-block' }}>
             <QRCodeSVG value={qrUrl} size={256} level="H" includeMargin={true} />
